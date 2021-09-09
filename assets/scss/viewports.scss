@@ -1,0 +1,26 @@
+ /* Extra small devices (phones, 768px and down) */
+ @media only screen and (max-width: 768px) {
+    .pagination-previous, .pagination-next, .step-title{
+        display:none;
+    }
+ }
+
+ /* Small devices (tablets, 769px and up) */
+ @media only screen and (min-width: 769px) {
+
+ }
+ 
+ /* Medium devices (desktop, 1024px and up) */
+ @media only screen and (min-width: 1024px) {
+
+ }
+ 
+ /* Large devices (widescreen, 1024px and up) */
+ @media only screen and (min-width: 1024px) {
+
+ }
+ 
+ /* Extra large devices (full hd, 1408px and up) */
+ @media only screen and (min-width: 1408px) {
+
+ } 

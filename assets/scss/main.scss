@@ -1,0 +1,22 @@
+body{
+
+}
+
+.flexcol{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  .flexcol button{
+    width: 300px;
+  }
+  .flexrow{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+  .flexi{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }

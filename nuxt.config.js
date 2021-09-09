@@ -27,7 +27,22 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-  ],
+    // Load a Node.js module directly (here it's a Sass file)
+    'bulma',
+    // CSS file in the project
+    // '~/assets/css/variables.css',
+    // SCSS file in the project
+    '@/assets/scss/variables.scss',
+    '~/assets/scss/main.scss',
+    '~/assets/scss/viewports.scss'
+    ],
+  styleResources: {
+    scss: [
+      '~/assets/scss/variables.scss',
+      '~/assets/scss/main.scss',
+      '~/assets/scss/viewports.scss'
+      ]
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -45,7 +60,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/buefy
-    'nuxt-buefy',
+    ['nuxt-buefy', { css: false}],    
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
   ],
@@ -55,5 +70,13 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    loaders: {
+      sass: {
+        implementation: require('sass'),
+      },
+      scss: {
+        implementation: require('sass'),
+      },
+    },
   }
 }
